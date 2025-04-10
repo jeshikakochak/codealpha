@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Book Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 Personal Book Library</h1>
+  <input type="text" id="search" placeholder="Search by title or author...">
+
+  <div class="tabs">
+    <button onclick="showTab('All')">All</button>
+    <button onclick="showTab('Fiction')">Fiction</button>
+    <button onclick="showTab('Programming')">Programming</button>
+    <button onclick="showTab('History')">History</button>
+    <button onclick="showTab('HistoryTab')">History</button>
+  </div>
+
+  <div id="books" class="book-list"></div>
+
+  <div id="borrow-history" class="history" style="display:none;">
+    <h3>Borrowing History</h3>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
